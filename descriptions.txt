@@ -1,0 +1,28 @@
+csv consists of the rainfall data , we will be classifying the rainfall 
+
+preprocessing is already done by sir 
+
+data- find the dependent & independent variable 
+df.describe().T -  to transform the data while descriptions only - used for comparison of the data 
+every string in python is object
+
+df.columns = df.columns.str.strip() - to remove the spacing in data 
+
+ex:- '    winddirection' - here the column name consists the spacing so the strip functions removes the spacing 
+output:- 'winddirection'
+to drop the null values - df.isnull().sum()
+
+Q. there is one empty value so what should we do - impute or drop ?
+ans:- the ratio of the missing value is very less, if imputing the data might reflect the changes 
+to drop the data then the proportion of the missing value in the data must be less than 5% & should be Missing places at random 
+
+.map() - function to convert object to int yes-1 no-0
+
+--> if the data is imbalanced we have used downsampling 
+    > using random choice we can use the higher sampling data to make both the data same -> example of downsampling
+
+models to train --> svm, logistic regression, decision tree
+
+hyper parameter tuning - to increase the accuracy of the model 
+
+
